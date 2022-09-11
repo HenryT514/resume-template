@@ -1,0 +1,280 @@
+
+
+\documentclass[11pt]{article}
+
+
+% SOME PACKAGES
+
+% use geometry package to format margins
+\usepackage[a4paper, top = 0.5cm, bottom = 0.5cm, left = 0.5cm, right = 0.5cm]{geometry}
+
+% for list alignment
+\usepackage{enumitem}
+%
+\usepackage{multicol}
+%line spacing
+\linespread{0.7}
+
+\usepackage{scrextend}
+
+
+\begin{document}
+% environment for personal information at the top of the page
+
+
+\newenvironment{personalinfo}[3]{
+\noindent
+	\begin{center}  
+		\Large  {#1} \\
+		\vspace{0.5mm}
+		\scriptsize Email : {#2}    \hspace{3mm}   \scriptsize Contact number : {#3}
+	\end{center}
+\vspace{-0.2cm}
+}
+
+
+
+% Section Headers
+\newenvironment{SectionHeaders}[1]
+{
+\vspace{0.2cm}
+\noindent 
+	\large \textbf {#1} % Header for the section
+		\vspace{0.1cm}
+			\hrule
+}{\vspace{0.2cm}}
+
+% body type 1
+\newenvironment{body1}[2]{
+\noindent \small \textbf{#1} \hfill \scriptsize{#2} 
+
+}{\vspace{0.2cm}}
+
+% body type 2
+\newenvironment{body2}[3]{
+\noindent \small \textbf{#1} \hfill \scriptsize{#2} 
+
+\vspace{0.1cm} 
+
+\noindent\scriptsize \textbf {#3}
+\vspace{0.2cm}
+}{\vspace{0.2cm}}
+
+
+% body type 3 - skills and whatnots
+\newenvironment{body3}[1]{
+\noindent \small \textbf{#1}
+
+\vspace{0.1cm} 
+\scriptsize{}
+
+}{\vspace{0.2cm}}
+
+
+
+% body type 3 - language
+
+\newenvironment{body4}[2]{
+\noindent \scriptsize {#1} \hfill \scriptsize{#2}
+
+\vspace{0.1cm} 
+\scriptsize{}
+
+}{\vspace{0.2cm}}
+
+
+
+
+% CONTENTS HERE
+
+%=================================================================================================================%
+
+\begin{personalinfo} {MY NAME} {myemail@gmail.com} {+99 9999 9999}
+\end{personalinfo}
+
+
+%=================================================================================================================%
+\begin{SectionHeaders}{EDUCATION}
+\end{SectionHeaders}
+
+% Education 1
+\begin{body1}{UNIVERSITY NAME}{Jan xxxx - Dec xxxx}
+\noindent \scriptsize{Major/course decription} \\
+\noindent \scriptsize {Cumulative GPA -/-}
+\end{body1}
+
+% Education 2
+
+\begin{body1}{HIGHSCHOOL}{Jan xxxx - Dec xxxx}
+\noindent \scriptsize{Description} 
+\end{body1}
+
+%=================================================================================================================%
+
+\begin{SectionHeaders}{EXPERIENCE}
+\end{SectionHeaders}
+
+\begin{body2}
+{WORK EXPERIENCE 1}
+{Jan xxxx - Dec xxxx}
+{position}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+	\item this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+	\item this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+\end{itemize}
+\end{minipage}
+\end{body2}
+
+
+\begin{body2}
+{WORK EXPERIENCE 2}
+{Jan xxxx - Dec xxxx}
+{position}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item  this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+	\item  this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+\end{itemize}
+\end{minipage}
+\end{body2}
+
+
+\begin{body2}
+{WORK EXPERIENCE 3}
+{Jan xxxx - Dec xxxx}
+{position}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item  this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width  
+	\item  this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+	\item  this is just for testing the line width,  his is just for testing the line width, his is just for testing the line width,, his is just for testing the line width 
+\end{itemize}
+\end{minipage}
+\end{body2}
+
+
+%=================================================================================================================%
+
+
+\begin{SectionHeaders}{CO-CURRICULAR ACTIVITIES}
+\end{SectionHeaders}
+
+\begin{body2}
+{CCA 1}
+{Jan xxxx - Dec xxxx}
+{Role}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item what did i do
+	\item what did i do
+	\item what did i do
+\end{itemize}
+\end{minipage}
+\end{body2}
+
+
+\begin{body2}
+{CCA 2}
+{Jan xxxx - Dec xxxx}
+{Role}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item what did i do
+	\item what did i do
+	\item what did i do
+\end{itemize}
+\end{minipage}
+\end{body2}
+
+
+%=================================================================================================================%
+
+\begin{SectionHeaders}{ADDITIONAL INFORMATION, SKILLS}
+\end{SectionHeaders}
+
+
+\begin{body3}
+{SKILLS/TECHNOLOGIES 1}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item skills1, skills2, skills3 , skills4
+\end{itemize}
+\end{minipage}
+\end{body3}
+
+
+\begin{body3}
+{SKILLS/TECHNOLOGIES 2}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item skills1, skills2, skills3 , skills4
+\end{itemize}
+\end{minipage}
+\end{body3}
+
+
+%=================================================================================================================%
+
+\begin{SectionHeaders}{RELEVANT CLASSES}
+\end{SectionHeaders}
+
+\begin{body3}
+{FIELD/MAJOR/SPECIALISATION}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item Module code/ module description
+	\item Module code/ module description
+\end{itemize}
+\end{minipage}
+\end{body3}
+
+
+\begin{body3}
+{FIELD/MAJOR/SPECIALISATION}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item Module code/ module description
+	\item Module code/ module description
+\end{itemize}
+\end{minipage}
+\end{body3}
+
+\begin{body3}
+{Others}
+
+\noindent \begin{minipage}{16cm}
+\begin{itemize}[leftmargin=*]
+	\item Module code/ module description
+	\item Module code/ module description
+\end{itemize}
+\end{minipage}
+\end{body3}
+
+
+%=================================================================================================================%
+
+\begin{SectionHeaders}{LANGUAGE COMPETENCY}
+\end{SectionHeaders}
+
+
+\begin{body4}
+{Language 1}{competency}
+\end{body4}
+
+\begin{body4}
+{Language 2}{competency}
+\end{body4}
+
+
+\end{document}
